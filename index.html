@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="Assets/Trivia.css/Style.css">
+  </head>
+  <body>
+  <div class="container" role="main">
+    <div class="jumbotron">
+      <h1>Hip Hop Trivia</h1>
+      <p id="verdict">For the Culture!</h1>
+        <div class="col-md-4 col-md-offset-4">
+          <p class="bg-success" id="alert-correct">Correct!<br>Points:&nbsp;<span
+                                id="points"></span>
+          </p>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <p class="bg-danger" id="alert-error">Wrong!<br>Errors:&nbsp;<span
+                                id="errors"></span>
+          </p>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div id="game">
+          <section id="end">
+            <h2>Question: </h2>
+            <p id="question"></p>
+            <hr>
+          </section>
+          <div class="row">
+            <div class="input-group col-xs-10  col-xs-offset-1 col-md-8 col-md-offset-2">
+              <div id="answer-box">
+                <input id="A" type="radio" name="answer" value="A">
+                  <span id="a1"></span><br>
+                <input id="B" type="radio" name="answer" value="B">
+                  <span id="a2"></span>  <br>
+                <input id="C" type="radio" name="answer" value="C">
+                  <span id="a3"></span>  <br>
+                <input id="D" type="radio" name="answer" value="D">
+                  <span id="a4"></span>  <br>
+              </div>
+              <div class="row">
+                <div id="buttons" class="col-xs-6 col-xs-offset-1">
+                  <br>
+                  <button id="answer-btn" class="btn btn-lg btn-primary">Answer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> 
+      <script src="Assets/Trivia.js/retry.js"></script>
+      <script src="Assets/Trivia.js/random.js"></script>
+    <script src="Assets/Trivia.js/app.js"></script>
+  </body>
+</html>
